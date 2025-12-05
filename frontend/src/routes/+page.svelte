@@ -64,21 +64,18 @@
 						</div>
 
 						<div class="flex gap-2">
-							{#if product.url}
-								<a 
-									href={product.url} 
-									target="_blank" 
-									rel="noopener noreferrer"
-									class="flex-1 px-4 py-2 text-sm font-medium text-blue-600 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors text-center"
-								>
-									DETAIL
-								</a>
-							{/if}
+							<a 
+								href={`/detail/${product.id}`}
+								class="flex-1 px-4 py-2 text-sm font-medium text-blue-600 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors text-center"
+							>
+								DETAIL
+							</a>
 								<button
 									class="flex-1 px-4 py-2 text-sm font-medium text-white bg-blue-500 rounded-lg hover:bg-blue-600 transition-colors"
 								>
 								<a 
-									href={product.id} 
+									href={product.url} 
+									target="_blank"
 									rel="noopener noreferrer"
 								>
 									INSTALOVAT

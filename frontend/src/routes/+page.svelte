@@ -27,7 +27,7 @@
 	})
 </script>
 
-<div class="min-h-screen bg-gray-50">
+<div class="bg-gray-50">
 	<header class="bg-white border-b border-gray-200">
 		<div class="container mx-auto px-6 py-4">
 			<h1 class="text-sm font-semibold text-gray-600 uppercase tracking-wide">PRODUKT KATALOG</h1>

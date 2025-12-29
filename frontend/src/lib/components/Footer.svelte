@@ -15,11 +15,11 @@
 					<p>DIČ: CZ07279531</p>
 				</div>
 				<div class="flex gap-2 mt-4">
-					<div class="bg-white rounded p-2 w-20 h-12 flex items-center justify-center">
-						<span class="text-xs text-gray-600">ISO</span>
+					<div class="bg-white rounded p-2 flex items-center justify-center">
+						<img src="/footer_eu_logo.png" alt="EU Logo" class="h-12 w-auto" />
 					</div>
-					<div class="bg-white rounded p-2 w-20 h-12 flex items-center justify-center">
-						<span class="text-xs text-gray-600">CERT</span>
+					<div class="bg-white rounded p-2 flex items-center justify-center">
+						<img src="/footer_cert_logo.png" alt="Certification Logo" class="h-12 w-auto" />
 					</div>
 				</div>
 			</div>

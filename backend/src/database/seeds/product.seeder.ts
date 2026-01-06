@@ -38,7 +38,6 @@ export class ProductSeeder {
       }
     ]
 
-    console.log('🌱 Seeding products...')
     const createdProducts = await productRepository.save(products)
     console.log(`✅ Successfully seeded ${createdProducts.length} products!`)
   }

@@ -6,20 +6,16 @@
      */
 	let products = []
 	let loading = true
-	let error = ''
 
 	onMount(async () => {
 		console.log('Fetching products from backend...')
 		try {
 			const response = await fetch('http://localhost:3002/products')
-			console.log('Response status:', response.status)
 			if (!response.ok) {
 				throw new Error('Failed to fetch products')
 			}
 			products = await response.json()
-			console.log('Products loaded:', products.length)
 		} catch (e) {
-			error = e instanceof Error ? e.message : 'Unknown error'
 			console.error('Error fetching products:', e)
 		} finally {
 			loading = false
@@ -43,10 +39,6 @@
 		{#if loading}
 			<div class="bg-white rounded-lg shadow-sm p-12 text-center">
 				<p class="text-lg text-gray-600">Načítání produktů...</p>
-			</div>
-		{:else if error}
-			<div class="bg-red-50 border border-red-200 rounded-lg p-12 text-center">
-				<p class="text-lg text-red-600">Chyba: {error}</p>
 			</div>
 		{:else}
 

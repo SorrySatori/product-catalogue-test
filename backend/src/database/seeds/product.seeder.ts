@@ -20,7 +20,6 @@ export class ProductSeeder {
         icon: 'P',
         category: 'Nástroje',
         tags: ['PDF', 'Generátor', 'Šablony', 'Dokumenty'],
-        installable: true,
         heroImage: undefined,
         features: [
           {
@@ -72,7 +71,6 @@ export class ProductSeeder {
         icon: 'U',
         category: 'Nástroje',
         tags: ['URL', 'Zkracovač', 'Analytika', 'Statistiky'],
-        installable: true,
         heroImage: undefined,
         features: [
           {
@@ -124,7 +122,6 @@ export class ProductSeeder {
         icon: 'Q',
         category: 'Nástroje',
         tags: ['QR', 'Generátor', 'Kódy', 'Marketing'],
-        installable: true,
         heroImage: undefined,
         features: [
           {
@@ -176,7 +173,6 @@ export class ProductSeeder {
         icon: 'Q',
         category: 'Testování',
         tags: ['QA', 'Testování', 'Playwright', 'Cypress', 'Automatizace'],
-        installable: true,
         heroImage: undefined,
         features: [
           {

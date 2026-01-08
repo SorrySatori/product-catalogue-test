@@ -44,9 +44,6 @@ export class Product {
   @Column({ type: 'simple-array', nullable: true })
   tags: string[]
 
-  @Column({ type: 'boolean', default: false })
-  installable: boolean
-
   @Column({ type: 'varchar', length: 500, nullable: true })
   heroImage: string
 

@@ -147,10 +147,6 @@
                                 <h3 class="font-semibold text-gray-700 mb-2">Kategorie</h3>
                                 <p class="text-gray-600">{data.product.category || 'Ostatní'}</p>
                             </div>
-                            <div>
-                                <h3 class="font-semibold text-gray-700 mb-2">Instalovatelné</h3>
-                                <p class="text-gray-600">{data.product.installable ? 'Ano' : 'Ne'}</p>
-                            </div>
                             {#if data.product.tags && data.product.tags.length > 0}
                                 <div class="md:col-span-2">
                                     <h3 class="font-semibold text-gray-700 mb-2">Tagy</h3>

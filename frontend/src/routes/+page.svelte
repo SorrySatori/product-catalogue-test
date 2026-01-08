@@ -31,10 +31,10 @@
 	</header>
 
 	<div class="container mx-auto px-6 py-12">
-		<div class="text-center mb-8">
-			Produkt catalog title text
+		<div class="text-center mb-12">
+			<h1 class="text-4xl font-bold text-gray-900 mb-4">Produkt katalog</h1>
+			<p class="text-lg text-gray-600">Nezjednoduší vám něco nabídky nástrojů a aplikací Pro Labs život?</p>
 		</div>
-
 
 		{#if loading}
 			<div class="bg-white rounded-lg shadow-sm p-12 text-center">

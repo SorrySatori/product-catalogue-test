@@ -25,8 +25,8 @@
 
 <div class="bg-gray-50">
 	<header class="bg-white border-b border-gray-200">
-		<div class="container mx-auto px-6 py-4">
-			<h1 class="text-sm font-semibold text-gray-600 uppercase tracking-wide">PRODUKT KATALOG</h1>
+		<div class="container mx-auto py-4">
+			<img src="/header_logo.png" alt="Prorocketeers Logo" class="h-[36px] w-auto" />
 		</div>
 	</header>
 

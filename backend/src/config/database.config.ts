@@ -13,7 +13,7 @@ export const getDatabaseConfig = (
     password: configService.get<string>('POSTGRES_PASSWORD', 'postgres'),
     database: configService.get<string>('POSTGRES_DB', 'product_catalogue'),
     entities: [Product],
-    synchronize: configService.get<string>('NODE_ENV') !== 'production', // Auto-sync in development only
+    synchronize: configService.get<string>('NODE_ENV') !== 'production',
     logging: configService.get<string>('NODE_ENV') === 'development',
   }
 }

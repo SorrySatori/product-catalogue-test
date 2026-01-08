@@ -20,24 +20,19 @@ const dataSourceOptions: DataSourceOptions = {
 const dataSource = new DataSource(dataSourceOptions)
 
 async function runSeeders() {
-  console.log('🚀 Starting database seeding...')
-  console.log('📦 Connecting to database...')
 
   try {
     await dataSource.initialize()
-    console.log('✅ Database connection established')
 
     // Run seeders
     const productSeeder = new ProductSeeder()
     await productSeeder.run(dataSource)
 
-    console.log('🎉 Seeding completed successfully!')
   } catch (error) {
     console.error('❌ Error during seeding:', error)
     process.exit(1)
   } finally {
     await dataSource.destroy()
-    console.log('👋 Database connection closed')
   }
 }
 

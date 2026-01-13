@@ -9,7 +9,7 @@
 				<h3 class="font-semibold mb-4">Naše základna</h3>
 				<div class="text-sm text-gray-300 space-y-1">
 					<p>Bohumínská 402/135</p>
-					<p>739 61 Slezské Ostrava-Muglinov</p>
+					<p>739 61 Slezská Ostrava-Muglinov</p>
 					<p>Česká Republika</p>
 					<p class="mt-3">IČ: 07279531</p>
 					<p>DIČ: CZ07279531</p>

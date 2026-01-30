@@ -1,4 +1,6 @@
 <script lang="ts">
+    import ErrorState from '$lib/components/ErrorState.svelte'
+    
     export let data
 
     // Get icon color based on product name
@@ -24,18 +26,9 @@
 
 <div class="min-h-screen bg-gray-50">
     {#if data.error}
-        <div class="container mx-auto px-6 py-12">
-            <div class="bg-red-50 border border-red-200 rounded-lg p-8">
-                <h2 class="text-2xl font-bold text-red-900 mb-2">Chyba</h2>
-                <p class="text-red-700">{data.error}</p>
-            </div>
-        </div>
+        <ErrorState message={data.error} />
     {:else if !data.product}
-        <div class="container mx-auto px-6 py-12">
-            <div class="bg-white rounded-lg shadow-sm p-8">
-                <p class="text-gray-600">Produkt nenalezen.</p>
-            </div>
-        </div>
+        <ErrorState title="Produkt nenalezen" message="Produkt nenalezen." />
     {:else}
         <section class="bg-gradient-to-br from-[#0a1f44] to-[#1a3a6e] text-white py-20">
             <div class="container mx-auto px-6">

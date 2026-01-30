@@ -24,12 +24,6 @@
 </script>
 
 <div class="bg-gray-50">
-	<header class="bg-white border-b border-gray-200">
-		<div class="container mx-auto py-4">
-			<img src="/header_logo.png" alt="Prorocketeers Logo" class="h-[36px] w-auto" />
-		</div>
-	</header>
-
 	<div class="container mx-auto px-6 py-12">
 		<div class="text-center mb-12">
 			<h1 class="text-4xl font-bold text-gray-900 mb-4">Produkt katalog</h1>

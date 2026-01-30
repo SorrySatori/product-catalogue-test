@@ -1,5 +1,6 @@
 <script lang="ts">
     import ErrorState from '$lib/components/ErrorState.svelte'
+    import TeamMember from '$lib/components/TeamMember.svelte'
     
     export let data
 
@@ -106,13 +107,7 @@
                 <div>
                     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
                         {#each teamMembers as member}
-                            <div class="text-center">
-                                <div class="w-24 h-24 mx-auto bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center text-4xl mb-3 shadow-lg">
-                                    {member.avatar}
-                                </div>
-                                <h4 class="font-semibold text-white mb-1">{member.name}</h4>
-                                <p class="text-sm text-gray-300">{member.role}</p>
-                            </div>
+                            <TeamMember {member} />
                         {/each}
                     </div>
                 </div>

@@ -1,6 +1,7 @@
 <script lang="ts">
     import ErrorState from '$lib/components/ErrorState.svelte'
     import TeamMember from '$lib/components/TeamMember.svelte'
+    import FeatureCard from '$lib/components/FeatureCard.svelte'
     
     export let data
 
@@ -80,11 +81,7 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {#each features as feature}
-                        <div class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-shadow">
-                            <div class="text-4xl mb-4">{feature.icon}</div>
-                            <h3 class="text-xl font-bold text-gray-900 mb-3">{feature.title}</h3>
-                            <p class="text-gray-600 leading-relaxed">{feature.description}</p>
-                        </div>
+                        <FeatureCard {feature} />
                     {/each}
                 </div>
             </div>

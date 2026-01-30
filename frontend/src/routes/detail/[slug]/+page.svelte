@@ -1,8 +1,8 @@
 <script lang="ts">
     import ErrorState from '$lib/components/ErrorState.svelte'
     import TeamMember from '$lib/components/TeamMember.svelte'
-    import FeatureCard from '$lib/components/FeatureCard.svelte'
     import HeroSection from '$lib/components/HeroSection.svelte'
+    import FeaturesSection from '$lib/components/FeaturesSection.svelte'
     
     export let data
 
@@ -36,24 +36,7 @@
     {:else}
         <HeroSection product={data.product} {iconColor} />
 
-        <section class="py-16 bg-white">
-            <div class="container mx-auto px-6">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                        Hlavní funkce produktu
-                    </h2>
-                    <p class="text-gray-600 max-w-3xl mx-auto">
-                        Podtitulek
-                    </p>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {#each features as feature}
-                        <FeatureCard {feature} />
-                    {/each}
-                </div>
-            </div>
-        </section>
+        <FeaturesSection {features} />
 
         <section class="py-16 bg-gradient-to-br from-[#0a1f44] to-[#1a3a6e] text-white">
             <div class="container mx-auto px-6">

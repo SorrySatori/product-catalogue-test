@@ -32,7 +32,7 @@
 			rel="noopener noreferrer"
 			class="flex-1 px-4 py-2 text-sm font-medium text-white bg-blue-500 rounded-lg hover:bg-blue-600 transition-colors text-center"
 		>
-			INSTALOVAT
+			VYZKOUŠET
 		</a>
 	</div>
 </div>

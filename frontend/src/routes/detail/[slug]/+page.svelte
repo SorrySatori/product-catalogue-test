@@ -2,6 +2,7 @@
     import ErrorState from '$lib/components/ErrorState.svelte'
     import TeamMember from '$lib/components/TeamMember.svelte'
     import FeatureCard from '$lib/components/FeatureCard.svelte'
+    import HeroSection from '$lib/components/HeroSection.svelte'
     
     export let data
 
@@ -24,6 +25,7 @@
     $: features = data.product?.features || []
     $: teamMembers = data.product?.teamMembers || []
     $: teamDescription = data.product?.teamDescription || 'Náš tým zkušených vývojářů a designérů pracuje na vytváření nejlepších nástrojů pro vaši produktivitu. Věříme v open-source a komunitní přístup k vývoji softwaru.'
+    $: iconColor = data.product ? getIconColor(data.product.name) : ''
 </script>
 
 <div class="min-h-screen bg-gray-50">
@@ -32,41 +34,7 @@
     {:else if !data.product}
         <ErrorState title="Produkt nenalezen" message="Produkt nenalezen." />
     {:else}
-        <section class="bg-gradient-to-br from-[#0a1f44] to-[#1a3a6e] text-white py-20">
-            <div class="container mx-auto px-6">
-                <div class="flex flex-col lg:flex-row items-center gap-12">
-                    <div class="flex-1 space-y-6">
-                        <div class="flex items-center gap-4">
-                            <div class="{getIconColor(data.product.name)} w-20 h-20 rounded-xl flex items-center justify-center text-white font-bold text-3xl shadow-lg">
-                                {data.product.icon || data.product.name.charAt(0)}
-                            </div>
-                            <h1 class="text-4xl lg:text-5xl font-bold">{data.product.name}</h1>
-                        </div>
-                        
-                        <p class="text-lg text-gray-200 leading-relaxed max-w-2xl">
-                            {data.product.description}
-                        </p>
-
-                        {#if data.product.extendedDescription}
-                            <p class="text-gray-300 leading-relaxed max-w-2xl">
-                                {data.product.extendedDescription}
-                            </p>
-                        {/if}
-
-                        <div class="flex gap-4 pt-4">
-                            <a 
-                                href={data.product.url}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="px-6 py-3 bg-white text-blue-900 rounded-lg hover:bg-gray-100 transition-colors font-semibold shadow-lg"
-                            >
-                            INSTALOVAT
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <HeroSection product={data.product} {iconColor} />
 
         <section class="py-16 bg-white">
             <div class="container mx-auto px-6">

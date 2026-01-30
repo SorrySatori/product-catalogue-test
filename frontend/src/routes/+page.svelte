@@ -1,5 +1,6 @@
 <script>
 	import { onMount } from 'svelte'
+	import Loader from '$lib/components/Loader.svelte'
 
 	/**
      * @type {any[]}
@@ -31,9 +32,7 @@
 		</div>
 
 		{#if loading}
-			<div class="bg-white rounded-lg shadow-sm p-12 text-center">
-				<p class="text-lg text-gray-600">Načítání produktů...</p>
-			</div>
+			<Loader />
 		{:else}
 
 			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

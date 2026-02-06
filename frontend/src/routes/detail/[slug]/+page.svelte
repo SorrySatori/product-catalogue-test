@@ -4,6 +4,7 @@
     import FeaturesSection from '$lib/components/FeaturesSection.svelte'
     import TeamSection from '$lib/components/TeamSection.svelte'
     import TechnicalInfo from '$lib/components/TechnicalInfo.svelte'
+    import ContactForm from '$lib/components/ContactForm.svelte'
     
     export let data
 
@@ -39,5 +40,6 @@
         <FeaturesSection {features} />
         <TeamSection {teamMembers} {teamDescription} />
         <TechnicalInfo product={data.product} />
+        <ContactForm />
     {/if}
 </div>

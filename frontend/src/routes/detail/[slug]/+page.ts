@@ -1,8 +1,10 @@
+import { getApiUrl } from '$lib/config/api'
+
 export async function load({ params, fetch }) {
   const slug = params.slug
   
   try {
-    const response = await fetch(`http://localhost:3002/products/${slug}`)
+    const response = await fetch(getApiUrl(`products/${slug}`))
     
     if (!response.ok) {
       throw new Error(`Failed to fetch product: ${response.statusText}`)

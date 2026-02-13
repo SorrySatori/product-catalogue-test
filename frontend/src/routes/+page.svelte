@@ -2,6 +2,7 @@
 	import { onMount } from 'svelte'
 	import Loader from '$lib/components/Loader.svelte'
 	import ProductCard from '$lib/components/ProductCard.svelte'
+	import { getApiUrl } from '$lib/config/api'
 
 	/**
      * @type {any[]}
@@ -12,7 +13,7 @@
 	onMount(async () => {
 		console.log('Fetching products from backend...')
 		try {
-			const response = await fetch('http://localhost:3002/products')
+			const response = await fetch(getApiUrl('products'))
 			if (!response.ok) {
 				throw new Error('Failed to fetch products')
 			}

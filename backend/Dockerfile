@@ -40,4 +40,4 @@ ENV PRODUCT_CATALOGUE_API_URL=${PRODUCT_CATALOGUE_API_URL}
 
 EXPOSE ${PORT}
 
-CMD ["node", "dist/src/main.js"]
+CMD ["node", "dist/main.js"]

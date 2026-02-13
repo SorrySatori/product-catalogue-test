@@ -54,12 +54,10 @@ export class ProductSeeder {
           }
         ],
         teamMembers: [
-          { name: 'Jan Novák', role: 'Lead Developer', avatar: '👨‍💻' },
-          { name: 'Petra Svobodová', role: 'Backend Developer', avatar: '👩‍💻' },
-          { name: 'Martin Dvořák', role: 'DevOps Engineer', avatar: '👨‍🔧' },
-          { name: 'Lucie Procházková', role: 'QA Engineer', avatar: '👩‍🔬' },
-          { name: 'Tomáš Novotný', role: 'UI/UX Designer', avatar: '👨‍🎨' },
-          { name: 'Eva Černá', role: 'Product Manager', avatar: '👩‍💼' }
+          { name: 'Ondřej Sýkora', role: 'Lead Developer' },
+          { name: 'Roman Hvizdak', role: 'Backend Developer' },
+          { name: 'Jan Breitkopf', role: 'Full Stack Developer' },
+          { name: 'Jakub Kleberc', role: 'DevOps Engineer' }
         ],
         teamDescription: 'Náš tým zkušených vývojářů a designérů pracuje na vytváření nejlepších nástrojů pro generování PDF dokumentů. Věříme v open-source a komunitní přístup k vývoji softwaru.'
       },
@@ -105,12 +103,8 @@ export class ProductSeeder {
           }
         ],
         teamMembers: [
-          { name: 'David Král', role: 'Full Stack Developer', avatar: '👨‍💻' },
-          { name: 'Anna Horáková', role: 'Frontend Developer', avatar: '👩‍💻' },
-          { name: 'Jakub Marek', role: 'Data Analyst', avatar: '👨‍💼' },
-          { name: 'Karolína Veselá', role: 'UX Designer', avatar: '👩‍🎨' },
-          { name: 'Michal Kučera', role: 'Backend Developer', avatar: '👨‍💻' },
-          { name: 'Simona Malá', role: 'Marketing Specialist', avatar: '👩‍💼' }
+          { name: 'Lukáš Stuchlík', role: 'Full Stack Developer' },
+          { name: 'Ondřej Sýkora', role: 'Lead Developer' }
         ],
         teamDescription: 'Specializujeme se na vytváření nástrojů pro správu a analýzu URL adres. Náš tým kombinuje technickou expertízu s uživatelsky přívětivým designem.'
       },
@@ -156,12 +150,8 @@ export class ProductSeeder {
           }
         ],
         teamMembers: [
-          { name: 'Filip Němec', role: 'Lead Developer', avatar: '👨‍💻' },
-          { name: 'Tereza Pokorná', role: 'Designer', avatar: '👩‍🎨' },
-          { name: 'Ondřej Pospíšil', role: 'Backend Developer', avatar: '👨‍💻' },
-          { name: 'Markéta Šťastná', role: 'Frontend Developer', avatar: '👩‍💻' },
-          { name: 'Petr Kolář', role: 'DevOps', avatar: '👨‍🔧' },
-          { name: 'Veronika Růžičková', role: 'QA Tester', avatar: '👩‍🔬' }
+          { name: 'Ondřej Sýkora', role: 'Lead Developer' },
+          { name: 'Patrik Ludvik', role: 'Full Stack Developer' }
         ],
         teamDescription: 'Jsme tým nadšenců pro QR technologie a mobilní marketing. Naším cílem je poskytovat nejlepší nástroje pro generování a správu QR kódů.'
       },
@@ -207,12 +197,8 @@ export class ProductSeeder {
           }
         ],
         teamMembers: [
-          { name: 'Robert Beneš', role: 'QA Lead', avatar: '👨‍💻' },
-          { name: 'Kristýna Marková', role: 'Test Automation Engineer', avatar: '👩‍💻' },
-          { name: 'Lukáš Fiala', role: 'Senior QA Engineer', avatar: '👨‍🔬' },
-          { name: 'Barbora Nováková', role: 'QA Engineer', avatar: '👩‍🔬' },
-          { name: 'Adam Černý', role: 'DevOps Engineer', avatar: '👨‍🔧' },
-          { name: 'Nikola Svobodová', role: 'Documentation Writer', avatar: '👩‍💼' }
+          { name: 'Ondřej Sýkora', role: 'Lead Developer' },
+          { name: 'Vojtěch Jíra', role: 'QA Engineer' }
         ],
         teamDescription: 'Náš QA tým se zaměřuje na vytváření robustních testovacích frameworků a nástrojů. Věříme v automatizaci a kontinuální zlepšování kvality softwaru.'
       }

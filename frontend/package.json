@@ -16,7 +16,7 @@
   },
   "type": "module",
   "engines": {
-    "node": ">=24.0.0"
+    "node": ">=20.0.0 <21.0.0"
   },
   "dependencies": {
     "@skeletonlabs/skeleton": "^2.10.2",
